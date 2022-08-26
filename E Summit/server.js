@@ -27,6 +27,7 @@ app.get('/register',(req,res)=>{
     res.sendFile(path.join(intialPath,"register.html"));
 })
 app.post('/register-user',(req,res)=>{
+    const {name,email,password} =req.body;
     if(!name.length||!email.length||!password.length){
         res.json('fill all the fields');
     }else{
@@ -59,7 +60,7 @@ app.post('/login-user',(req,res)=>{
             res.json(data[0]);
 
         }else{
-            res.json('emailid or password is incorrect');
+            res.json('email id or password is incorrect');
         }
     })
 })
