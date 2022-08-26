@@ -1,7 +1,7 @@
-const express=require('express');
-const path=require('path');
-const bodyParser=require('body-parser');
-const knex=require('knex');
+const express =require('express');
+const path =require('path');
+const bodyParser =require('body-parser');
+const knex =require('knex');
 
 const db=knex({
     client:'pg',
@@ -46,7 +46,7 @@ app.post('/register-user',(req,res)=>{
         })
     }
 })
-app.post('/login-user',(req,res=>{
+app.post('/login-user',(req,res)=>{
     const{email,password}=req.body;
     db.select('name','email')
     .from('users')
@@ -62,7 +62,7 @@ app.post('/login-user',(req,res=>{
             res.json('emailid or password is incorrect');
         }
     })
-}))
+})
 app.listen(3000,(req,res)=>{
     console.log('listening on port 3000.....')
 })
