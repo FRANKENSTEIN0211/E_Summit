@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=<device-width>,initial-scale=1.0" >
+        <title>Document</title>
+        <script type="text/javascript">
+            // this is whERE DATA will be getting stored
+            function callvalue(){
+              var name=document.getElementById("uname").value;
+              var email=document.getElementById("email").value;
+              var mob=document.getElementById("mob").value;
+              var detail=document.getElementById("cwork").value;
+              var amountre=document.getElementById("amo").value;
+              var eval=document.getElementById("val").value;
+              var verification=document.getElementById("ver").value;
+              //these bottom lines will write but we need this instead pass the required values whereever required
+              doc.writeln("Your Info: "+"<br>"+"your name: "+name+"<br>");
+              doc.writeln("your email: "+name+"<br>");
+              doc.writeln("your mobile no.: "+name+"<br>");
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="callvalue()">
+
+            <h1>REGISTRATION FORM</h1>
+            Company Name :<input type="text" placeholder="CompanyName" id="cname"><br>
+            Registered Email ID : <input type="email" placeholder="Email" id="email"><br>
+            Contact no. :<input type="number" placeholder="Contact no." id="mob"><br>
+            Compony Field OF Work :<input type="text" placeholder="" id="amo"><br>
+            Total Funding Amount (in Lakh's) :<input type="number" placeholder="Total Funding Amount" id="mob"><br>
+            Valuation (Pre-Money-Valuation) :<input type="number" placeholder=" Valuation (Pre-Money-Valuation)" id="val"><br>
+            GOVERNMENT OF INDIA VERIFIED STARTUP (Y/N) :<input type="text" placeholder="" id="ver"><br>
+            <!--add enterprenuer page link to this-->
+            <input type="submit" value="register">
+        </form>
+    </body>
+</html>
