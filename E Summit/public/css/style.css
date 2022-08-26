@@ -48,6 +48,7 @@ a:-webkit-any-link {
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
+    display: inline;
 }
 
 
@@ -255,4 +256,9 @@ a:-webkit-any-link {
     background-color: white;
     height: 4px;
     margin: 5px 3px;
+}
+.buttn{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 50%;
 }
