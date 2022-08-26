@@ -33,7 +33,11 @@ html{
     text-align: center;
 }
 
-
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration:none;
+}
 .btn{
     padding: 8px 10px;
     margin: 7px 3px;
