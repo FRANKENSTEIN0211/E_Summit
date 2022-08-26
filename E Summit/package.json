@@ -15,5 +15,6 @@
     "nodemon": "^2.0.19",
     "pg": "^8.8.0"
   },
+  "keywords": [],
   "description": ""
 }
