@@ -14,7 +14,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/bgp.jpg');
+    background: rgba(0, 0, 0, 0.7) url('../images/bkg3.jpg');
+    background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     font-family: 'roboto', sans-serif;
